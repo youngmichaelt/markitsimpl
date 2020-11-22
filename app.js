@@ -20,7 +20,7 @@ var User = mongoose.model('User');
 var Bookmarks = mongoose.model('Bookmarks');
 
 
-mongoose.connect('mongodb://localhost:27017/datadb', { useNewUrlParser: true }, { useUnifiedTopology: true });
+mongoose.connect('mongodb://'+ process.env.MONGO_USERNAME + ":" + process.env.MONGO_PASSWORD + 'localhost:27017/datadb', { useNewUrlParser: true }, { useUnifiedTopology: true });
 
 
 
@@ -673,8 +673,8 @@ app.get('/pricing', function(req, res, next) {
       // {CHECKOUT_SESSION_ID} is a string literal; do not change it!
       // the actual Session ID is returned in the query parameter when your customer
       // is redirected to the success page.
-      success_url: 'http://localhost:3000/main?folder=0',
-      cancel_url: 'http://localhost:3000/pricing',
+      success_url: process.env.BASE_URL+':3000/main?folder=0',
+      cancel_url: process.env.BASE_URL+':3000/pricing',
     }, function(err, session){
       if (err) return next(err);
       res.render('pricing',{sessionid: session.id, currentUser: currentUserId, subscriptionActive: subscriptionActive, STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY})
