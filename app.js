@@ -171,7 +171,7 @@ passport.use('signup-local',new LocalStrategy({
     // bookmarks: [{name: " ", url: " "}],
     folders: [{
       name: "Folder",
-      bookmarks:[{name: "Simple Bookmarks", url: "markitsimpl.com"}]
+      bookmarks:[{name: "MarkItSimpl", url: "markitsimpl.com"}]
     }],
     subscriptionActive: false
 
@@ -666,7 +666,7 @@ app.get('/pricing', function(req, res, next) {
         },
       ],
       discounts: [{
-        coupon: "fxeyWbcT"
+        coupon: process.env.COUPON_KEY
       }],
 
 
