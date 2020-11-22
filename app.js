@@ -163,7 +163,7 @@ passport.use('signup-local',new LocalStrategy({
     email: email
   }, function (err, user){
     if (err) return next(err);
-    if (user) return next({message: "user already exists"})
+    if (user) return next({message: "User already exists"})
   })
   let newUser = new User({
     email: email,

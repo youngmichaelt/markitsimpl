@@ -502,8 +502,9 @@ function Edit(value){
     var name = document.getElementById('editName');
     var link = document.getElementById('editLink');
     var id = document.getElementById('inputId');
-
-    name.value = value[0]
+    console.log(link.value)
+    name1 = value[0].replaceAll('|', ' ')
+    name.value = name1
     link.value = value[1]
     id.value = value[2]
 

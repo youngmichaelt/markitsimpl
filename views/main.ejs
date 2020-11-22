@@ -1067,7 +1067,15 @@
         var btnID = i;
         var name = bookmarkList[i].name;
         var link = bookmarkList[i].url;
-        var edit = [bookmarkList[i].name, bookmarkList[i].url, btnID];
+        // console.log(link)
+          names = name.split(' ')
+          console.log(names)
+          name = name.replaceAll(' ', '|')
+          // name = ''
+
+        var edit = [name, bookmarkList[i].url, btnID];
+        name = name.replaceAll('|', ' ')
+        console.log(edit)
         openTabs.id +=',' + bookmarkList[i].url ;
         var dropdown = `<ul class="nav-link1 " style="list-style: none;"><li class="nav-item dropdown no-arrow">
             <a class="nav-link1 dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
