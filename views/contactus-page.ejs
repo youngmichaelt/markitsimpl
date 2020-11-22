@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Cancel Subscription</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
+    <link rel="icon" type="image/x-icon" href="assets/img/folder-open-regular.svg" />
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <!--    <link href="css/styles.css" rel="stylesheet" />-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/pricing.css" rel="stylesheet">
+</head>
+
+<body class="pricing-body">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 bg-gradient-primary" id="mainNav">
+    <div class="container" >
+        <a class="navbar-brand js-scroll-trigger" href="/">Mark It Simpl</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li  class="nav-item"><a id="homeBtn" class="nav-link" href="/main?folder=0" style="display: none">Home</a></li>
+                <script>
+                    var home = document.getElementById('homeBtn')
+                    var currentUser = '<%=currentUser%>'
+                    if (currentUser != 'null'){
+                        home.style.display = 'block'
+                    }
+                    console.log(home)
+                </script>
+                <li class="nav-item"><a class="nav-link" href="/login-page">Log In</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/signup-page">Sign Up</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">-->
+<!--    <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>-->
+<!--    <nav class="my-2 my-md-0 mr-md-3">-->
+<!--        <a class="p-2 text-dark" href="#">Features</a>-->
+<!--        <a class="p-2 text-dark" href="#">Enterprise</a>-->
+<!--        <a class="p-2 text-dark" href="#">Support</a>-->
+<!--        <a class="p-2 text-dark" href="#">Pricing</a>-->
+<!--    </nav>-->
+<!--    <a class="btn btn-outline-primary" href="#">Sign up</a>-->
+<!--</div>-->
+
+<!--<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">-->
+<!--    <h1 class="display-4">Pricing</h1>-->
+<!--    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>-->
+<!--</div>-->
+<header class="masthead" style="padding-top: 50px;">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-white">
+        <h1 class="display-4 ">Contact Us</h1>
+        <!--        <button class="btn btn-primary btn-xl btn-block">Yes</button>-->
+
+        <!--        <button class="btn btn-primary btn-xl btn-block">No</button>-->
+    </div>
+    <div class="container1">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Email Us: markitsimpl@gmail.com</h4>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title "> Tell us about...<small class="text-muted"></small></h3>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>- Billing Issues</li>
+                        <li>- Suggestions</li>
+                        <li>- Bugs and other issues</li>
+                    </ul>
+
+<!--                    <div class="pricing-header  mx-auto text-center text-white" style="max-width: 25vw">-->
+<!--                        <a class="btn btn-primary btn-xl btn-block" onclick="cancelSubscription()">Yes, I am dumb</a>-->
+
+<!--                        <a href="/main?folder=0" class="btn btn-primary btn-xl btn-block">No, I am smart</a>-->
+<!--                    </div>-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1 text-center">
+        <div class="card-deck mb-3 text-center">
+            <div class="mb-4 text-center " style="background-color: #4e73df">
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+
+
+
+</script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<script>
+    Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+    });
+</script>
+</body>
+</html>

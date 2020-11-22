@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script src = "../main.js"></script>
+
+
+
+
+
+<!--  <title><%= JSON.stringify(bookmarkList) %></title>-->
+  <title>Mark it Simpl</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/folder-open-regular.svg" />
+
+</head>
+
+<body id="page-top"  >
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/main?folder=0">
+        <div class="sidebar-brand-icon">
+            <i class="far fa-folder-open"></i>
+
+        </div>
+        <div class="sidebar-brand-text mx-3">Mark it Simpl <sup>!</sup></div>
+      </a>
+
+      <!-- Divider -->
+<!--      <hr class="sidebar-divider my-0">-->
+
+      <!-- Nav Item - Dashboard -->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/main">-->
+<!--          <i class="fas fa-fw fa-tachometer-alt"></i>-->
+<!--          <span>Dashboard</span></a>-->
+<!--      </li>-->
+
+      <!-- Divider -->
+<!--      <hr class="sidebar-divider">-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/main">-->
+<!--          <i class="fas fa-fw fa-tachometer-alt"></i>-->
+<!--          <span>Billing</span></a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/logout">-->
+<!--          <i class="fas fa-fw fa-tachometer-alt"></i>-->
+<!--          <span>Logout</span></a>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Heading &ndash;&gt;-->
+<!--      <div class="sidebar-heading">-->
+<!--        Interface-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Nav Item - Pages Collapse Menu &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">-->
+<!--          <i class="fas fa-fw fa-cog"></i>-->
+<!--          <span>Components</span>-->
+<!--        </a>-->
+<!--        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">-->
+<!--          <div class="bg-white py-2 collapse-inner rounded">-->
+<!--            <h6 class="collapse-header">Custom Components:</h6>-->
+<!--            <a class="collapse-item" href="buttons.html">Buttons</a>-->
+<!--            <a class="collapse-item" href="cards.html">Cards</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Nav Item - Utilities Collapse Menu &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">-->
+<!--          <i class="fas fa-fw fa-wrench"></i>-->
+<!--          <span>Utilities</span>-->
+<!--        </a>-->
+<!--        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">-->
+<!--          <div class="bg-white py-2 collapse-inner rounded">-->
+<!--            <h6 class="collapse-header">Custom Utilities:</h6>-->
+<!--            <a class="collapse-item" href="utilities-color.html">Colors</a>-->
+<!--            <a class="collapse-item" href="utilities-border.html">Borders</a>-->
+<!--            <a class="collapse-item" href="utilities-animation.html">Animations</a>-->
+<!--            <a class="collapse-item" href="utilities-other.html">Other</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Divider &ndash;&gt;-->
+<!--      <hr class="sidebar-divider">-->
+
+<!--      &lt;!&ndash; Heading &ndash;&gt;-->
+<!--      <div class="sidebar-heading">-->
+<!--        Addons-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Nav Item - Pages Collapse Menu &ndash;&gt;-->
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">-->
+<!--          <i class="fas fa-fw fa-folder"></i>-->
+<!--          <span>Pages</span>-->
+<!--        </a>-->
+<!--        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">-->
+<!--          <div class="bg-white py-2 collapse-inner rounded">-->
+<!--            <h6 class="collapse-header">Login Screens:</h6>-->
+<!--            <a class="collapse-item" href="login.html">Login</a>-->
+<!--            <a class="collapse-item" href="register.html">Register</a>-->
+<!--            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>-->
+<!--            <div class="collapse-divider"></div>-->
+<!--            <h6 class="collapse-header">Other Pages:</h6>-->
+<!--            <a class="collapse-item" href="404.html">404 Page</a>-->
+<!--            <a class="collapse-item active" href="blank.html">Blank Page</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Nav Item - Charts &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="charts.html">-->
+<!--          <i class="fas fa-fw fa-chart-area"></i>-->
+<!--          <span>Charts</span></a>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Nav Item - Tables &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="tables.html">-->
+<!--          <i class="fas fa-fw fa-table"></i>-->
+<!--          <span>Tables</span></a>-->
+<!--      </li>-->
+
+      <!-- Divider -->
+<!--      <hr class="sidebar-divider d-none d-md-block">-->
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline" >
+
+        <div id="sidebarDiv" class="text-center d-none d-md-inline">
+
+        </div>
+
+<!--        <button class="rounded-circle border-0" id="sidebarToggle"></button>-->
+        <button class="btn-primary rounded-circle border-0" id="sidebarToggle1" type="button" onclick="createFolder()" data-toggle="modal" data-target="#folderModal">
+          <!--                  <i class="fas fa-search fa-sm"></i>-->
+          <i class="fas fa-plus"></i>
+        </button>
+<!--        <hr class="sidebar-divider">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="/main">-->
+<!--            <i class="fas fa-fw fa-tachometer-alt"></i>-->
+<!--            <span>Billing</span></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="/logout">-->
+<!--            <i class="fas fa-fw fa-tachometer-alt"></i>-->
+<!--            <span>Logout</span></a>-->
+<!--        </li>-->
+      </div>
+<!--      <button class="rounded-circle border-0" type="button" onclick="createFolder()" data-toggle="modal" data-target="#folderModal">-->
+<!--        &lt;!&ndash;                  <i class="fas fa-search fa-sm"></i>&ndash;&gt;-->
+<!--        <i class="fas fa-plus-square"></i>-->
+<!--      </button>-->
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar  navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+
+          <h1 class="h3 mb-3 mt-3 ml-2 text-gray-800" name="test" id="folderHeader"></h1>
+
+
+          <!-- Topbar Search -->
+<!--          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">-->
+<!--            <div class="input-group">-->
+<!--              <input type="text" class="form-control bg-light border-0 small" placeholder="Add link..." aria-label="Search" aria-describedby="basic-addon2">-->
+<!--              <div class="input-group-append">-->
+<!--                <button class="btn btn-primary" type="button">-->
+<!--&lt;!&ndash;                  <i class="fas fa-search fa-sm"></i>&ndash;&gt;-->
+<!--                  <i class="fas fa-plus-square"></i>-->
+<!--                </button>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </form>-->
+
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+<!--              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                <i class="fas fa-bell fa-fw"></i>-->
+<!--                &lt;!&ndash; Counter - Alerts &ndash;&gt;-->
+<!--                <span class="badge badge-danger badge-counter">3+</span>-->
+<!--              </a>-->
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+<!--              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                <i class="fas fa-envelope fa-fw"></i>-->
+<!--                &lt;!&ndash; Counter - Messages &ndash;&gt;-->
+<!--                <span class="badge badge-danger badge-counter">7</span>-->
+<!--              </a>-->
+<!--              &lt;!&ndash; Dropdown - Messages &ndash;&gt;-->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+            <form action= '${saveMovementURL}' method="post" id="moveForm" class="moveForm">
+              <button id="" name= "" type="submit" onclick="" class="btn btn-lg btn-user rounded-circle border-0 close mt-4 savemoveBtn" style="display: none;" >
+                <i class="far fa-save"></i>
+              </button>
+              <input  id="nameInput" name="nameInput1" type="hidden" >
+              <input  id="linkInput" name="linkInput1" type="hidden" >
+            </form>
+            <button class="btn btn-user rounded-circle border-0 close m-3" id="modalbtn"  data-toggle="modal" data-target="#myModal" >
+              <i class="fas fa-plus"></i>
+            </button>
+
+            <button id="openTabs" onclick="OpenAllTabs(this.id)" class="btn btn-lg btn-user btn-block rounded-circle border-0 close" >
+              <i class="fas fa-external-link-alt"></i>
+            </button>
+            <ul class="nav-link2 " style="list-style: none;"><li class="nav-item dropdown no-arrow">
+                <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                  <i class="fas fa-ellipsis-h"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-left shadow " aria-labelledby="userDropdown">
+
+
+                  <button id='editFolderButton' onclick="editFolder(this.id)" class="btn btn-user btn-block"  data-toggle="modal" data-target="#editFolderModal">
+                    <i class="fas fa-edit"></i><span> Edit Folder Name</span>
+                  </button>
+                  <div class="dropdown-divider"></div>
+                  <button type="submit" id="${btnID}"  class="btn btn-user btn-block" data-toggle="modal" data-target="#deleteFolderModal">
+                    <i class="far fa-times-circle"></i><span> Delete Folder</span>
+                  </button>
+
+                </div>
+              </li> </ul>
+<!--            <button class="btn btn-primary btn-user rounded-circle border-0 close" id="modalbtn"  data-toggle="modal" data-target="#myModal">-->
+<!--              <i class="fas fa-plus"></i>-->
+<!--            </button>-->
+<!--            <button id='editFolderButton' onclick="editFolder(this.id)" class="btn btn-primary btn-user rounded-circle border-0 close ml-2"  data-toggle="modal" data-target="#editFolderModal">-->
+<!--              <i class="fas fa-edit"></i>-->
+<!--            </button>-->
+<!--            <button type="submit" id="${btnID}"  class="btn btn-primary btn-user rounded-circle border-0 close ml-2" style="margin-bottom: 1px;"data-toggle="modal" data-target="#deleteFolderModal">-->
+<!--              <i class="far fa-times-circle"></i>-->
+<!--            </button>-->
+<!--            <button id="openTabs" onclick="OpenAllTabs(this.id)" class="btn btn-user center-block" style="margin-bottom: 1px;display: inline-block;">-->
+<!--              <i class="fas fa-external-link-alt"></i>-->
+<!--            </button>-->
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow text-center">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <span class=" d-none d-lg-inline text-black-50 medium" id="headerbar"><%- email %></span>
+
+<!--                <img class="img-profile rounded-circle" >-->
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="/cancel-page">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Billing
+                </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/pricing">
+                      <i class="fas fa-money-bill fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Pricing
+                  </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/contactus-page">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Contact Us
+                </a>
+
+<!--                <a class="dropdown-item" href="#">-->
+<!--                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>-->
+<!--                  Activity Log-->
+<!--                </a>-->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+<!--          <form action= '${saveMovementURL}' method="post" id="moveForm" class="moveForm">-->
+<!--            <button id="" name= "" type="submit" onclick="" class="btn btn-default btn-lg btn-user savemoveBtn" style="display: none; right: 0px" >-->
+<!--              <i class="far fa-save"></i>-->
+<!--            </button>-->
+<!--            <input  id="nameInput" name="nameInput1" type="hidden" >-->
+<!--            <input  id="linkInput" name="linkInput1" type="hidden" >-->
+<!--          </form>-->
+          <!-- Page Heading -->
+          <h1 class="h3 mb-4 mt-3 text-gray-800" name="test" id="folderHeader">
+
+
+
+<!--            <button class="btn btn-primary btn-user rounded-circle border-0 close" id="modalbtn"  data-toggle="modal" data-target="#myModal">-->
+<!--              <i class="fas fa-plus"></i>-->
+<!--            </button>-->
+<!--            <button id='editFolderButton' onclick="editFolder(this.id)" class="btn btn-primary btn-user rounded-circle border-0 close ml-2"  data-toggle="modal" data-target="#editFolderModal">-->
+<!--              <i class="fas fa-edit"></i>-->
+<!--            </button>-->
+<!--            <button type="submit" id="${btnID}"  class="btn btn-primary btn-user rounded-circle border-0 close ml-2" style="margin-bottom: 1px;"data-toggle="modal" data-target="#deleteFolderModal">-->
+<!--              <i class="far fa-times-circle"></i>-->
+<!--            </button>-->
+<!--            <button id="openTabs" onclick="OpenAllTabs(this.id)" class="btn btn-user center-block" style="margin-bottom: 1px;display: inline-block;">-->
+<!--              <i class="fas fa-external-link-alt"></i>-->
+<!--            </button>-->
+          </h1>
+
+<!--          <button id=${edit} onclick="Edit(this.id)" class="btn  btn-user center-block" style="margin-bottom: 1px; display: inline-block;" data-toggle="modal" data-target="#editModal">-->
+<!--            <i class="fas fa-edit"></i>-->
+<!--          </button>-->
+<!--          <button class="btn btn-primary btn-user rounded-circle border-0 close" id="modalbtn"  data-toggle="modal" data-target="#myModal">-->
+<!--            <i class="fas fa-plus"></i>-->
+<!--          </button> -->
+          <div id="bookmarkContainer" class="bookmarkContainer" >
+<!--            <form action= '${saveMovementURL}' method="post" id="moveForm" class="moveForm">-->
+<!--              <button id="" name= "" type="submit" onclick="" class="btn btn-default btn-lg btn-user savemoveBtn" style="display: none; right:0px; position: absolute; padding: 10px; " >-->
+<!--                <i class="far fa-save"></i>-->
+<!--              </button>-->
+<!--              <input  id="nameInput" name="nameInput1" type="hidden" >-->
+<!--              <input  id="linkInput" name="linkInput1" type="hidden" >-->
+<!--            </form>-->
+<!--            <div class="card shadow border-left-info py-2 bookmark align-content-center" >-->
+<!--              <div class="card-body">-->
+<!--                <div class="row align-items-center no-gutters">-->
+<!--                  <div class="col mr-2">-->
+<!--                    <div class="text-uppercase text-info font-weight-bold text-xs mb-1">-->
+<!--                      <span>Google</span>-->
+<!--                    </div>-->
+<!--                    <div class="row no-gutters align-items-center">-->
+<!--                      <div class="col-auto">-->
+<!--                        <div class="text-dark font-weight-bold h5 mb-0 mr-3">-->
+<!--                          <span id="link">www.google.com</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col">-->
+
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-auto">-->
+<!--                    <button onclick="OpenTab()" class="btn btn-primary btn-user btn-block" >LINK</button>-->
+<!--                  </div>-->
+<!--  &lt;!&ndash;                <button>REMOVE</button>&ndash;&gt;-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+          </div>
+
+<!--          <div id="myModal" class="modal modal-content">-->
+<!--            <div class="card shadow border-left-info py-2 bookmark" style="width: 70vw;">-->
+<!--              <div class="card-body">-->
+<!--                <div class="row align-items-center no-gutters">-->
+<!--                  <div class="col mr-2">-->
+<!--                    <div class="text-uppercase text-info font-weight-bold text-xs mb-1">-->
+<!--                      <span>Google</span>-->
+<!--                    </div>-->
+<!--                    <div class="row no-gutters align-items-center">-->
+<!--                      <div class="col-auto">-->
+<!--                        <div class="text-dark font-weight-bold h5 mb-0 mr-3">-->
+<!--                          <span id="link">www.goofdfdfdfdgle.com</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col">-->
+
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-auto">-->
+<!--                    <button onclick="OpenTab()" class="btn btn-primary btn-user btn-block" >LINK</button>-->
+<!--                  </div>-->
+<!--                  &lt;!&ndash;                <button>REMOVE</button>&ndash;&gt;-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--          <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+
+          <div id="myModal" class="modal" tabindex="-1" >
+
+            <div class="bookmarkAdd modal-dialog modal-dialog-centered " style="width: 50vw; height: 50vh;">
+<!--              <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+
+              <div class="card shadow  py-2 modal-content text-center" >
+<!--                <button class="btn btn-user  border-0 close" id="btn-top-right"  data-dismiss="modal">-->
+<!--                  <i class="far fa-times-circle"></i>-->
+
+<!--                </button>-->
+                <h3 style="margin-top: 10px;">Add a new bookmark</h3>
+
+
+                              <div class="card-body text-center">
+
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col text-center">
+                                          <div class="text-uppercase text-info font-weight-bold text-xs text-center">
+<!--                                              <div class="form-group text-center">-->
+                                                <form class = "form-horizontal" id = 'saveForm' action="/save" method="post" >
+                                                  <div class="form-group text-center align-content-center">
+                                                      <input name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Bookmark Name..." style="margin-bottom: 15px;"></input>
+<!--                                                  <input type="URL" name="URL" class="form-control form-control-user" placeholder="URL">-->
+
+                                                  <input  name="password" class="form-control" placeholder="Enter URL..." style="margin-bottom: 15px;">
+                                                    <input  id="folderId" name=folderId type="hidden" >
+                                                  <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user "style="margin-bottom: 15px;" >SAVE</button>
+                                                  <button class="btn btn-user rounded-circle border-0 close" id="btn-top-right"  data-dismiss="modal">
+                                                    <i class="fas fa-share"></i>
+                                                  </button>
+
+<!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                                                  </div>
+
+                                                </form>
+<!--                                                <form action="/save" method="post">-->
+<!--                                                  <input class="mb-3 form-control"  type="email" name="email" placeholder="Your email">-->
+<!--                                                  <input class="mb-3 form-control" type="password" name="password" placeholder="Type password">-->
+<!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+<!--                                                </form>-->
+
+<!--                                              </div>-->
+
+                                               <div class="form-group">
+
+<!--                                                <input  name="password" class="form-control form-control-user" placeholder="URL">-->
+                                              </div>
+
+
+<!--                                            <button action="/save" type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+
+                                          </div>
+                                          <div class="row no-gutters align-items-center">
+
+                                              <div class="col-auto">
+
+                                                </div>
+
+                                          </div>
+                                        </div>
+
+                    <div class="col-auto align-items-center form-group" >
+
+
+<!--                                       <form action="/save" method="post">-->
+<!--                                           <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+<!--                                         <button onclick="Delete()" class="btn btn-primary btn-user btn-block form-control form-control-user" >DELETE</button>-->
+<!--                                       </form>-->
+
+
+                                        </div>
+
+                      <!--                <button>REMOVE</button>-->
+                                    </div>
+                                </div>
+                            </div>
+              </div>
+          </div>
+          <div id="editModal" class="modal" tabindex="-1" >
+            <div class="bookmarkAdd modal-dialog modal-dialog-centered" style="width: 50vw; height: 50vh;">
+              <!--              <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+              <div class="card shadow border-left-info py-2 modal-content text-center" >
+                <h3 style="margin-top: 10px;">Edit</h3>
+                <div class="card-body text-center">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col text-center">
+                      <div class="text-uppercase text-info font-weight-bold text-xs text-center">
+                        <!--                                              <div class="form-group text-center">-->
+                        <form id="editForm" class = "form-horizontal" action="/edit" method="post" >
+                          <div class="form-group text-center align-content-center">
+                            <input id="editName" name="name" class="form-control" aria-describedby="emailHelp" placeholder="" style="margin-bottom: 15px;"></input>
+                            <!--                                                  <input type="URL" name="URL" class="form-control form-control-user" placeholder="URL">-->
+
+                            <input  id="editLink" name="link" class="form-control" placeholder="Enter URL..." style="margin-bottom: 15px;">
+                            <input  id="inputId" name="inputId" type="hidden" >
+                            <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user "style="margin-bottom: 15px;" >SAVE</button>
+                            <button class="btn btn-user rounded-circle border-0 close" id="btn-top-right"  data-dismiss="modal">
+                              <i class="fas fa-share"></i>
+                            </button>
+                            <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                          </div>
+
+                        </form>
+                        <!--                                                <form action="/save" method="post">-->
+                        <!--                                                  <input class="mb-3 form-control"  type="email" name="email" placeholder="Your email">-->
+                        <!--                                                  <input class="mb-3 form-control" type="password" name="password" placeholder="Type password">-->
+                        <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                        <!--                                                </form>-->
+
+                        <!--                                              </div>-->
+
+                        <div class="form-group">
+
+                          <!--                                                <input  name="password" class="form-control form-control-user" placeholder="URL">-->
+                        </div>
+
+
+                        <!--                                            <button action="/save" type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+
+                      </div>
+                      <div class="row no-gutters align-items-center">
+
+                        <div class="col-auto">
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-auto align-items-center form-group" >
+
+
+                      <!--                                       <form action="/save" method="post">-->
+                      <!--                                           <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+                      <!--                                         <button onclick="Delete()" class="btn btn-primary btn-user btn-block form-control form-control-user" >DELETE</button>-->
+                      <!--                                       </form>-->
+
+
+                    </div>
+
+                    <!--                <button>REMOVE</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="folderModal" class="modal" tabindex="-1" >
+            <div class="bookmarkAdd modal-dialog modal-dialog-centered" style="width: 50vw; height: 50vh;">
+              <!--              <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+              <div class="card shadow border-left-info py-2 modal-content text-center" >
+                <h3 style="margin-top: 10px;">Add a new folder</h3>
+                <div class="card-body text-center">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col text-center">
+                      <div class="text-uppercase text-info font-weight-bold text-xs text-center">
+                        <!--                                              <div class="form-group text-center">-->
+                        <form class = "form-horizontal" id = 'saveFolderForm' action="/saveFolder" method="post" >
+                          <div class="form-group text-center align-content-center">
+                            <input name="folderName" class="form-control" aria-describedby="emailHelp" placeholder="Enter Folder Name..." style="margin-bottom: 15px;"></input>
+                            <!--                                                  <input type="URL" name="URL" class="form-control form-control-user" placeholder="URL">-->
+
+<!--                            <input  name="password" class="form-control" placeholder="Enter URL..." style="margin-bottom: 15px;">-->
+                            <input  id="folderId" name=folderId type="hidden" >
+                            <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user "style="margin-bottom: 15px;" >SAVE</button>
+                            <button class="btn btn-user rounded-circle border-0 close" id="btn-top-right"  data-dismiss="modal">
+                              <i class="fas fa-share"></i>
+                            </button>
+                            <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                          </div>
+
+                        </form>
+                        <!--                                                <form action="/save" method="post">-->
+                        <!--                                                  <input class="mb-3 form-control"  type="email" name="email" placeholder="Your email">-->
+                        <!--                                                  <input class="mb-3 form-control" type="password" name="password" placeholder="Type password">-->
+                        <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                        <!--                                                </form>-->
+
+                        <!--                                              </div>-->
+
+                        <div class="form-group">
+
+                          <!--                                                <input  name="password" class="form-control form-control-user" placeholder="URL">-->
+                        </div>
+
+
+                        <!--                                            <button action="/save" type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+
+                      </div>
+                      <div class="row no-gutters align-items-center">
+
+                        <div class="col-auto">
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-auto align-items-center form-group" >
+
+
+                      <!--                                       <form action="/save" method="post">-->
+                      <!--                                           <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+                      <!--                                         <button onclick="Delete()" class="btn btn-primary btn-user btn-block form-control form-control-user" >DELETE</button>-->
+                      <!--                                       </form>-->
+
+
+                    </div>
+
+                    <!--                <button>REMOVE</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="editFolderModal" class="modal" tabindex="-1" >
+            <div class="bookmarkAdd modal-dialog modal-dialog-centered" style="width: 50vw; height: 50vh;">
+              <!--              <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+              <div class="card shadow border-left-info py-2 modal-content text-center" >
+                <h3 style="margin-top: 10px;">Edit</h3>
+                <div class="card-body text-center">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col text-center">
+                      <div class="text-uppercase text-info font-weight-bold text-xs text-center">
+                        <!--                                              <div class="form-group text-center">-->
+                        <form id="editFolderForm" class = "form-horizontal" action="/editFolder" method="post" >
+                          <div class="form-group text-center align-content-center">
+                            <input id="editFolderName" name="folderName" class="form-control" aria-describedby="emailHelp" placeholder="" style="margin-bottom: 15px;"></input>
+                            <!--                                                  <input type="URL" name="URL" class="form-control form-control-user" placeholder="URL">-->
+
+                            <input  id="inputId" name="inputId" type="hidden" >
+                            <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user "style="margin-bottom: 15px;" >SAVE</button>
+                            <button class="btn btn-user rounded-circle border-0 close" id="btn-top-right"  data-dismiss="modal">
+                              <i class="fas fa-share"></i>
+                            </button>
+                            <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                          </div>
+
+                        </form>
+                        <!--                                                <form action="/save" method="post">-->
+                        <!--                                                  <input class="mb-3 form-control"  type="email" name="email" placeholder="Your email">-->
+                        <!--                                                  <input class="mb-3 form-control" type="password" name="password" placeholder="Type password">-->
+                        <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                        <!--                                                </form>-->
+
+                        <!--                                              </div>-->
+
+                        <div class="form-group">
+
+                          <!--                                                <input  name="password" class="form-control form-control-user" placeholder="URL">-->
+                        </div>
+
+
+                        <!--                                            <button action="/save" type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+
+                      </div>
+                      <div class="row no-gutters align-items-center">
+
+                        <div class="col-auto">
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-auto align-items-center form-group" >
+
+
+                      <!--                                       <form action="/save" method="post">-->
+                      <!--                                           <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+                      <!--                                         <button onclick="Delete()" class="btn btn-primary btn-user btn-block form-control form-control-user" >DELETE</button>-->
+                      <!--                                       </form>-->
+
+
+                    </div>
+
+                    <!--                <button>REMOVE</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="deleteFolderModal" class="modal" tabindex="-1" >
+            <div class="bookmarkAdd modal-dialog modal-dialog-centered" style="width: 50vw; height: 50vh;">
+              <!--              <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+              <div class="card shadow border-left-info py-2 modal-content text-center" >
+                <h3 style="margin-top: 10px;"></h3>
+                <div class="card-body text-center">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col text-center">
+                      <div class="text-uppercase text-info font-weight-bold text-xs text-center">
+                        <!--                                              <div class="form-group text-center">-->
+                        <form id="deleteFolderForm" class = "form-horizontal" action="/delete" method="post" >
+                          <div class="form-group text-center align-content-center">
+<!--                            <input id="editName" name="name" class="form-control" aria-describedby="emailHelp" placeholder="" style="margin-bottom: 15px;"></input>-->
+                            <!--                                                  <input type="URL" name="URL" class="form-control form-control-user" placeholder="URL">-->
+                              <p id="deletefolderp" class="text-lg">Are you sure you want to delete this folder?</p>
+<!--                            <input  id="editLink" name="link" class="form-control" placeholder="Enter URL..." style="margin-bottom: 15px;">-->
+<!--                            <input  id="inputId" name="inputId" type="hidden" >-->
+
+                            <button id="deleteFolderbtn" type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user "style="margin-bottom: 15px;" >YES</button>
+                            <button class="btn btn-user rounded-circle border-0 close" id="btn-top-right"  data-dismiss="modal">
+                              <i class="fas fa-share"></i>
+                            </button>
+                              <script>
+                                  var folderid = document.URL
+                                  folderid = folderid.split('=')
+                                  console.log(folderid[1])
+                                  if (folderid[1] == 0){
+                                      var btn = document.getElementById('deleteFolderbtn')
+                                      console.log(btn)
+                                      btn.style.display = 'none'
+                                      var p = document.getElementById('deletefolderp')
+                                      p.innerText = 'Cannot delete the only folder you have...'
+                                  }
+                              </script>
+                            <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                          </div>
+
+                        </form>
+                        <!--                                                <form action="/save" method="post">-->
+                        <!--                                                  <input class="mb-3 form-control"  type="email" name="email" placeholder="Your email">-->
+                        <!--                                                  <input class="mb-3 form-control" type="password" name="password" placeholder="Type password">-->
+                        <!--                                                  <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+                        <!--                                                </form>-->
+
+                        <!--                                              </div>-->
+
+                        <div class="form-group">
+
+                          <!--                                                <input  name="password" class="form-control form-control-user" placeholder="URL">-->
+                        </div>
+
+
+                        <!--                                            <button action="/save" type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+
+                      </div>
+                      <div class="row no-gutters align-items-center">
+
+                        <div class="col-auto">
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-auto align-items-center form-group" >
+
+
+                      <!--                                       <form action="/save" method="post">-->
+                      <!--                                           <button type="submit" class="btn btn-primary btn-user btn-block form-control form-control-user" >SAVE</button>-->
+                      <!--                                         <button onclick="Delete()" class="btn btn-primary btn-user btn-block form-control form-control-user" >DELETE</button>-->
+                      <!--                                       </form>-->
+
+
+                    </div>
+
+                    <!--                <button>REMOVE</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--          <form action= '/saveMovement?folder=0' method="post" >-->
+<!--            <button id="" name= "" type="submit" onclick="" class="btn  btn-user btn-block savemoveBtn" style="display: none" >-->
+<!--              Done moving-->
+<!--            </button>-->
+<!--            <input  id="nameInput" name="nameInput" type="hidden" value="test">-->
+<!--            <input  id="linkInput" name="linkInput" type="hidden" value="test1" >-->
+<!--          </form>-->
+<!--          <form action="/save" method="post">-->
+
+<!--            <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+<!--          </form>-->
+
+<!--          <hr class="sidebar-divider d-none d-md-block" style="width: 70vw;">-->
+<!--          <form action="/save" method="post">-->
+<!--            <input class="mb-3 form-control"  type="email" name="email" placeholder="Your email">-->
+<!--            <input class="mb-3 form-control" type="password" name="password" placeholder="Type password">-->
+<!--            <input class="mb-3 btn btn-primary btn-xl" type="submit" value="Sign Up for a free trial!"></input>-->
+
+<!--          </form>-->
+          <!-- Sidebar Toggler (Sidebar) -->
+          <div class="text-center">
+
+<!--            <button class="rounded-circle border-0" id="modalbtn" onclick="modal()">-->
+<!--              <i class="fas fa-plus"></i>-->
+<!--            </button>-->
+            <button class="rounded-circle border-0" id="modalbtn" data-toggle="modal" data-target="#myModal">
+              <i class="fas fa-plus"></i>
+            </button>
+
+          </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="/logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+  <script>
+
+
+    var headerButtonHTML = `<button id=${edit} onclick="Edit(this.id)" class="btn  btn-user center-block" style="margin-bottom: 1px; display: inline-block;" data-toggle="modal" data-target="#editModal">
+            <i class="fas fa-edit"></i>
+            </button>
+            <button class="btn btn-primary btn-user rounded-circle border-0 close" id="modalbtn"  data-toggle="modal" data-target="#myModal">
+            <i class="fas fa-plus"></i>
+            </button>`
+    var bookmarkList = JSON.parse('<%- JSON.stringify(bookmarkList) %>');
+    var folders = JSON.parse('<%- JSON.stringify(folders) %>');
+    var folderId = document.URL.split('=')[1]
+    document.getElementById('folderId').value = folderId
+
+    var header = document.getElementById('folderHeader');
+    header.innerHTML += folders[folderId].name
+
+    var saveForm = document.getElementById('saveForm');
+    saveForm.action = '/save?folder=' + folderId;
+
+    var editForm = document.getElementById('editForm');
+    editForm.action = '/edit?folder=' + folderId;
+
+    var saveFolderForm = document.getElementById('saveFolderForm');
+    saveFolderForm.action = '/saveFolder?folder=' + folderId
+
+    var editFolderForm = document.getElementById('editFolderForm');
+    editFolderForm.action = '/editFolder?folder=' + folderId;
+
+    var deleteURL = '/delete?folder='+folderId;
+    var saveMovementURL = '/saveMovement?folder='+folderId
+
+    var editFolderButton = document.getElementById('editFolderButton');
+    editFolderButton.id = folders[folderId].name;
+
+    var deleteFolderForm = document.getElementById('deleteFolderForm');
+    deleteFolderForm.action = '/deleteFolder?folder=' + folderId;
+
+    var openTabs = document.getElementById('openTabs');
+
+
+
+    // console.log(bookmarkList.name)
+    var doc = document.getElementById('bookmarkContainer');
+
+    // console.log(folders)
+    for (i = 0; i < bookmarkList.length; i++) {
+
+      //get favicon
+      var b = bookmarkList[i].url.split('/')
+      var imgSrc = bookmarkList[i].url + '/favicon.ico'
+
+      if (!bookmarkList[i].url.includes('http')){
+          var b = bookmarkList[i].url.split('/')
+        imgSrc = 'https://' + b[0] +'/favicon.ico'
+      }
+      if (bookmarkList[i].url.includes('http')){
+            var b = bookmarkList[i].url.split('/')
+            imgSrc = 'https://' + b[2] +'/favicon.ico'
+        }
+      if (bookmarkList[i].url.includes('gmail.com')){
+        imgSrc = 'https://mail.google.com/favicon.ico'
+      }
+
+      if (bookmarkList[i].name && bookmarkList[i].url == " ") {
+        // console.log(bookmarkList[i].name)
+      } else {
+        // console.log('her')
+        // document.getElementById('link').innerHTML += bookmarkList[i].name;
+        // console.log(bookmarkList[i].name);
+
+
+        var bookmarkID = i;
+        var btnID = i;
+        var name = bookmarkList[i].name;
+        var link = bookmarkList[i].url;
+        var edit = [bookmarkList[i].name, bookmarkList[i].url, btnID];
+        openTabs.id +=',' + bookmarkList[i].url ;
+        var dropdown = `<ul class="nav-link1 " style="list-style: none;"><li class="nav-item dropdown no-arrow">
+            <a class="nav-link1 dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <i class="fas fa-ellipsis-h"></i>
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-left shadow " aria-labelledby="userDropdown">
+
+            <button id=${edit} onclick="Edit(this.id)" class="btn  btn-user btn-block" style="" data-toggle="modal" data-target="#editModal">
+                <i class="fas fa-edit"></i> <span>Edit</span>
+             </button>
+                <div class="dropdown-divider"></div>
+                <button id=${edit} onclick="startMove(this.id)" class="btn  btn-user btn-block" style="">
+                <i class="fas fa-edit"></i> <span>Move</span></button>
+<div class="dropdown-divider"></div>
+
+
+                <form action= ${deleteURL} method="post" id="deleteForm" class="deleteForm" >
+
+                <button type="submit" id="${btnID}"  class="btn  btn-user btn-block" style="margin-right: 3px;">
+                  <i class="fas fa-times"></i> <span>Delete</span>
+                </button>
+
+                <input  name="password" type="hidden" value=${btnID}>
+                <input  id="folderId" name=folderId type="hidden" >
+            </form>
+
+
+    </div>
+    </li> </ul>`
+                // <div class="dropdown-divider"></div>
+                // <button id=${edit} onclick="startMove(this.id)" class="btn  btn-user btn-block" style="">
+                // <i class="fas fa-edit"></i> <span>Move</span>
+        // </button>
+        var bookmarkHTML =
+                `
+
+        <div id=${btnID} class="card shadow border-left-info  bookmark align-content-center movementId ${btnID}" style="animation: slide-up 0.6s ease">
+            ${dropdown}
+            <div class="card-body">
+            <div class="row align-items-center no-gutters">
+            <img src=${imgSrc} style="width: 20px; height: 20px; top: 7px; left: 7px; position: absolute">
+            <div class="col mr-2 m-3">
+
+            <div class="text-uppercase text-info font-weight-bold text-xs mb-1">
+                <span style="font-size:25px" class="name">${name}</span>
+            </div>
+            <div class="row no-gutters align-items-center">
+            <div class="col-auto">
+            <div class="text-dark font-weight-bold h5 mb-0 mr-3">
+            <p></p>
+            <span style="font-size:20px" class="link">${link}</span>
+            </div>
+            </div>
+            <div class="">
+
+            </div>
+            </div>
+            </div>
+            <div class="" id="">
+
+             <button id=${link} onclick="OpenTab(this.id)" class="btn btn-user btn-block btn-lg" style="">
+              <i class="fas fa-external-link-alt"></i>
+             </button>
+             <button id=${i} name=${i} onclick="up(this.name)" class="btn  btn-user btn-block moveBtn  " style="display: none;" >
+                <i class="fas fa-arrow-up"></i>
+             </button>
+            <button id="${i}" name=${i} onclick="down(this.name)" class="btn  btn-user btn-block moveBtn" style="display: none" >
+            <i class="fas fa-arrow-down"></i>
+             </button>
+
+
+
+
+
+
+
+<!--            <button id="${btnID}" onclick="Delete(this.id)" class="btn btn-primary btn-user btn-block" >DELETE</button>-->
+
+
+            </div>
+            <!--                <button>REMOVE</button>-->
+            </div>
+            </div>
+            </div>
+            <hr class="sidebar-divider d-none d-md-block ${btnID}" style="width: 70vw;">`
+        //         <form action= '${saveMovementURL}' method="post" >
+        //         <button id="" name= "" type="submit" onclick="" class="btn  btn-user btn-block savemoveBtn" style="display: none" >
+        //         Done moving
+        // </button>
+        // <input  id="nameInput" name="nameInput" type="hidden" >
+        //         <input  id="linkInput" name="linkInput" type="hidden" >
+        //         </form>
+        doc.innerHTML += bookmarkHTML;
+      }
+    }
+    for (i = 0; i < folders.length; i++){
+
+      var side = document.getElementById('sidebarDiv');
+
+      var folderHTML = `
+
+         <hr class="sidebar-divider">
+        <li class="nav-item">
+        <a class="nav-link" href="/main?folder=${i}">
+          <i class="far fa-folder"></i>
+          <span style="font-size:17px">${folders[i].name}</span>
+
+</a>
+
+
+      </li>`
+
+      side.innerHTML += folderHTML
+
+
+    var deleteform = `<form action= ${deleteURL} method="post" id="deleteForm" class="deleteForm" >
+
+                <button type="submit" id="${btnID}"  class="btn btn-lg btn-user btn-block" style="margin-right: 3px;">
+                  <i class="fas fa-times"></i>
+
+
+                </button>
+
+                <input  name="password" type="hidden" value=${btnID}>
+                <input  id="folderId" name=folderId type="hidden" >
+            </form>`
+    }
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
